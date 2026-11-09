@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "eletrocomando"
+version = "0.1.0"
+description = "Simulador de comandos elétricos (MVP) em Python + Tkinter, inspirado em CADe SIMU e QElectroTech"
+authors = ["EletroComando"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+[tool.poetry.scripts]
+eletrocomando = "main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
